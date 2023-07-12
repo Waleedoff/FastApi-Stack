@@ -322,8 +322,7 @@ but when it responsed "CreatedStartupResponse" we took the Startup_id
 
 ### model.py file :
 
-![alt text](https://i.ibb.co/LQPf4n3/model.png
-)
+![alt text](https://i.ibb.co/LQPf4n3/model.png)
 
 ```
 Here model file 
@@ -337,8 +336,7 @@ https://i.ibb.co/MCYxhBR/enums.png
 
 ### enum.py file :
 
-![alt text](https://i.ibb.co/MCYxhBR/enums.png
-)
+![alt text](https://i.ibb.co/MCYxhBR/enums.png)
 
 ```
 Here enum file .
