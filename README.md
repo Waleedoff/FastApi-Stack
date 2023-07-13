@@ -12,7 +12,7 @@
 ```
 python is a programming language that we use to build our backend services. It is a high-level, general-purpose programming language that is easy to use, easy to  
 learn, and it comes with a large ecosystem of libraries and tools. We use Python because it is a powerful, flexible, and versatile language that is well-suited for  
-building web applications
+building web applications.
 ```
 
 
@@ -153,17 +153,17 @@ recommended)recommended) and some basic knowledge of Docker commands
 ## Docker Commands
 
 The following are some of the most commonly used Docker commands:
-
-  * docker compose up  - Starts the Docker containers.
-  * docker compose run <container> <command>  - Runs a command in a Docker container. 
-   We usually use this    command to run tests, linters, and other  
-   tools
- * docker compose down  - Stops the Docker containers.  
- * docker compose ps  - Lists the running Docker containers.  
- * docker compose logs  - Displays the logs for the running Docker containers.  
-* docker compose exec <container> <command>  - Executes a command in a running Docker container
-*  docker compose exec <container> bash  - Opens a bash shell in a running Docker container. 
-   We usually use    this command to run database migrations.
+```
+  docker compose up  - Starts the Docker containers.
+  docker compose run <container> <command>  - Runs a command in a Docker container. 
+         We usually use this    command to run tests, linters, and other tools
+  docker compose down  - Stops the Docker containers.  
+  docker compose ps  - Lists the running Docker containers.  
+  docker compose logs  - Displays the logs for the running Docker containers.  
+  docker compose exec <container> <command>  - Executes a command in a running Docker    container
+  docker compose exec <container> bash  - Opens a bash shell in a running Docker container. 
+         We usually use    this command to run database migrations.
+```
 
 Starting a new task involves several steps to ensure that we are working with the most up-to-date information and are able to track our progress effectively. The  
 following steps outline the process we follow.
@@ -265,20 +265,19 @@ By the end of this whole process, we should have a folder structure that looks l
 │ │ │ ├── fixtures.py  
 │ │ │ ├── test_endpoint.py  
 │ │ │ └── test_unit.py
-
 ```
 
 
 #  Example of a Simple Code
-<em> over here you will see how we are implement endpoint <em>
----
+Here you will see how we are implement endpoint ---
 
 
 ### rouete.py file :
 
 ```
 ```
-![alt text](https://i.ibb.co/tYfBx08/route.png)
+![alt text](https://i.ibb.co/tYfBx08/route.png
+)
 
 
 ```
@@ -293,12 +292,13 @@ when you write a route you should be follow these steps:
 
 ### service.py file :
 
-![alt text](https://i.ibb.co/YtMWdMb/service.png)
+![alt text](https://i.ibb.co/YtMWdMb/service.png
+)
 
 
 ```
 	Here we wrote the service(Logic) to this endpoint
-	and we sent schema "CreateStartupRequest" instead of model
+	and we sent the "CreateStartupRequest" instead of model
 	
 	
 ```
@@ -307,7 +307,8 @@ when you write a route you should be follow these steps:
 
 ### schema.py file :
 
-![alt text](https://i.ibb.co/4PF0P4Y/schema.png)
+![alt text](https://i.ibb.co/4PF0P4Y/schema.png
+)
 
 ```
 Here you see schema file 
@@ -322,7 +323,8 @@ but when it responsed "CreatedStartupResponse" we took the Startup_id
 
 ### model.py file :
 
-![alt text](https://i.ibb.co/LQPf4n3/model.png)
+![alt text](https://i.ibb.co/LQPf4n3/model.png
+)
 
 ```
 Here model file 
@@ -332,11 +334,11 @@ these field as you know before the model gonna represented in our database.
 ```
 
 
-https://i.ibb.co/MCYxhBR/enums.png
 
 ### enum.py file :
 
-![alt text](https://i.ibb.co/MCYxhBR/enums.png)
+![alt text](https://i.ibb.co/MCYxhBR/enums.png
+)
 
 ```
 Here enum file .
@@ -344,6 +346,84 @@ if you are looking at model you will find "Service" as field.
 python enums used for represent data that represents a finite set of states
 
 ```
+
+
+
+
+
+
+
+
+--------------------------
+
+THANK YOU IN THE BELOW YOU WILL FIND SOME REFRENCES HELP YOU ...
+
+
+
+
+ -------------------------------------
+
+
+# How to use PostgreSQL database in FastAPI
+
+* FOLLOW THESE STEPS: 
+https://www.educative.io/answers/how-to-use-postgresql-database-in-fastapi
+
+
+
+## Pydantic
+```
+Pydantic is a python library use to data parsing and validation.
+Guarantees the types and constraints of the output model, to the input data.
+
+
+```
+![alt text](https://cdnb.artstation.com/p/media_assets/images/images/001/038/453/large/sc_03.jpg?1676661376)
+
+
+
+# Here Another Example For Satr Platform Code.
+
+* Suppose we need to implement delete_path endpoint and testing the endpoint.
+
+model.py
+
+![alt text](https://i.ibb.co/C0y6LKQ/model-Path.png)
+
+
+
+
+
+route.py
+
+![](https://i.ibb.co/wrLXH6S/route-Path.png)
+
+service.py
+
+![](https://i.ibb.co/CtngTsx/service-Path.png)
+
+
+## testing the endpoint..
+
+
+
+* First, create a fixture (setup).
+
+
+![](https://i.ibb.co/Zd0653b/fixture.png)
+
+* Second, create testendpoint file
+
+![](https://i.ibb.co/0DytJn2/testendpoint.png)
+
+
+* Third, check inside  the folder of this endpoint test must be inclucde __init__.py file to running the test
+![](https://i.ibb.co/Qc7FMJB/init.png)
+
+
+
+
+
 
 
 
