@@ -115,6 +115,8 @@ A lightweight database migration tool for Python.
 
 https://learnbatta.com/blog/getting-started-with-alembic/#why-alembic
 
+https://alembic.sqlalchemy.org/en/latest/index.html
+
 ```
 
 
