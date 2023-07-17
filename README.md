@@ -113,6 +113,8 @@ A lightweight database migration tool for Python.
   and it provides a simple, intuitive API for creating and  
   applying migrations
 
+https://learnbatta.com/blog/getting-started-with-alembic/#why-alembic
+
 ```
 
 
